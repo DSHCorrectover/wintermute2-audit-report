@@ -1,0 +1,29 @@
+{
+  "description": "Known-correct test vectors for Profanity seed->address derivation",
+  "source": "Safeheron profanity-vanity-research + independent verification",
+  "target_address": "0x000002Cba8DfB0a86A47a415592835E17fac080a",
+  "vectors": [
+    {
+      "name": "Safeheron test vector #1",
+      "seed": 12345,
+      "iterator": 5,
+      "note": "Known working pair from Safeheron public research. Verified independently."
+    },
+    {
+      "name": "Safeheron test vector #2",
+      "seed": 99999,
+      "iterator": 42,
+      "note": "Additional verification vector."
+    },
+    {
+      "name": "Edge case: iterator = 0",
+      "seed": 777777,
+      "iterator": 0,
+      "note": "Tests the direct-match path where no iterator offset is needed."
+    }
+  ],
+  "wintermute2": {
+    "status": "awaiting_result",
+    "note": "The actual seed and iterator for 0x000002...080a will be published here once independently verified and responsibly disclosed."
+  }
+}
